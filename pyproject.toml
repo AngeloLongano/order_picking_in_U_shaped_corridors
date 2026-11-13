@@ -1,0 +1,45 @@
+[project]
+name = "order_picking_in_U_shaped_corridors"
+version = "0.1.0"
+description = "Picking with a movable depot in U-shaped corridors"
+readme = "README.md"
+authors = [{ name = "angelolongano", email = "angelo.longano.dev@gmail.com" }]
+requires-python = ">=3.13"
+dependencies = [
+    "ipykernel>=6.29",
+    "matplotlib>=3.10",
+    "gurobipy>=13.0.3,<14",
+    "ortools>=9.15.6755",
+    "pandas>=3.0.6",
+    "pip>=26.2.2",
+    "scikit-learn>=1.9.1",
+    "seaborn>=0.13.2",
+    "statsmodels>=0.15.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "src"
+module-root = ""
+
+[dependency-groups]
+dev = ["pyright>=1.1.414", "ruff>=0.17.4", "ty>=0.0.101"]
+
+[tool.ruff]
+target-version = "py313"
+include = ["*.py", "*.pyi", "*.ipynb"]
+
+[tool.ruff.lint]
+extend-select = ["I", "RUF"]
+
+[tool.ruff.lint.per-file-ignores]
+"notebooks/*.ipynb" = ["RUF001"] # Mathematical symbols in teaching output.
+
+[tool.pyright]
+include = ["src", "tests", "notebooks"]
+pythonVersion = "3.13"
+venvPath = "."
+venv = ".venv"
