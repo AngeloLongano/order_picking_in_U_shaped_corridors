@@ -16,3 +16,6 @@ wheels/
 /paper.txt
 /paper/
 /skills-lock.json
+/results/
+/.playwright-cli/
+/presentazione/

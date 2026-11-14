@@ -1,0 +1,307 @@
+schema_version: 1
+active: pilota
+selection:
+  score: mean of within-group min-max normalized total demand, minimum tours and mean Euclidean distance to pick centroid;
+    ties by instance name
+  representative_ranks_one_based:
+    facile: 2
+    media: 5
+    difficile: 9
+scenarios:
+  tecnica:
+    instances:
+    - name: 44-(9x4)-10-01
+  pilota:
+    instances:
+    - name: 44-(8x6)-10-08
+      stratum: facile
+      indicators:
+        total_demand: 29
+        minimum_tours: 2
+        spatial_dispersion_m: 4.156705
+        normalized_score: 0.224671
+        rank_in_group: 2
+    - name: 44-(8x6)-10-10
+      stratum: media
+      indicators:
+        total_demand: 34
+        minimum_tours: 3
+        spatial_dispersion_m: 4.086593
+        normalized_score: 0.644444
+        rank_in_group: 5
+    - name: 44-(8x6)-10-07
+      stratum: difficile
+      indicators:
+        total_demand: 31
+        minimum_tours: 3
+        spatial_dispersion_m: 5.033894
+        normalized_score: 0.911111
+        rank_in_group: 9
+    - name: 44-(8x6)-15-10
+      stratum: facile
+      indicators:
+        total_demand: 38
+        minimum_tours: 3
+        spatial_dispersion_m: 4.578348
+        normalized_score: 0.343522
+        rank_in_group: 2
+    - name: 44-(8x6)-15-08
+      stratum: media
+      indicators:
+        total_demand: 43
+        minimum_tours: 3
+        spatial_dispersion_m: 5.093594
+        normalized_score: 0.560465
+        rank_in_group: 5
+    - name: 44-(8x6)-15-06
+      stratum: difficile
+      indicators:
+        total_demand: 48
+        minimum_tours: 4
+        spatial_dispersion_m: 4.853024
+        normalized_score: 0.719873
+        rank_in_group: 9
+    - name: 44-(9x4)-10-01
+      stratum: facile
+      indicators:
+        total_demand: 20
+        minimum_tours: 2
+        spatial_dispersion_m: 4.513656
+        normalized_score: 0.317855
+        rank_in_group: 2
+    - name: 44-(9x4)-10-10
+      stratum: media
+      indicators:
+        total_demand: 34
+        minimum_tours: 3
+        spatial_dispersion_m: 3.420508
+        normalized_score: 0.644444
+        rank_in_group: 5
+    - name: 44-(9x4)-10-07
+      stratum: difficile
+      indicators:
+        total_demand: 31
+        minimum_tours: 3
+        spatial_dispersion_m: 4.31982
+        normalized_score: 0.839271
+        rank_in_group: 9
+    - name: 44-(9x4)-15-05
+      stratum: facile
+      indicators:
+        total_demand: 30
+        minimum_tours: 2
+        spatial_dispersion_m: 4.742205
+        normalized_score: 0.29637
+        rank_in_group: 2
+    - name: 44-(9x4)-15-08
+      stratum: media
+      indicators:
+        total_demand: 43
+        minimum_tours: 3
+        spatial_dispersion_m: 4.443209
+        normalized_score: 0.533215
+        rank_in_group: 5
+    - name: 44-(9x4)-15-06
+      stratum: difficile
+      indicators:
+        total_demand: 48
+        minimum_tours: 4
+        spatial_dispersion_m: 4.353775
+        normalized_score: 0.735123
+        rank_in_group: 9
+    - name: 44-(10x2)-10-06
+      stratum: facile
+      indicators:
+        total_demand: 25
+        minimum_tours: 2
+        spatial_dispersion_m: 3.795683
+        normalized_score: 0.328387
+        rank_in_group: 2
+    - name: 44-(10x2)-10-10
+      stratum: media
+      indicators:
+        total_demand: 34
+        minimum_tours: 3
+        spatial_dispersion_m: 2.842121
+        normalized_score: 0.644444
+        rank_in_group: 5
+    - name: 44-(10x2)-10-09
+      stratum: difficile
+      indicators:
+        total_demand: 33
+        minimum_tours: 3
+        spatial_dispersion_m: 4.009209
+        normalized_score: 0.888151
+        rank_in_group: 9
+    - name: 44-(10x2)-15-07
+      stratum: facile
+      indicators:
+        total_demand: 37
+        minimum_tours: 3
+        spatial_dispersion_m: 3.010665
+        normalized_score: 0.25641
+        rank_in_group: 2
+    - name: 44-(10x2)-15-08
+      stratum: media
+      indicators:
+        total_demand: 43
+        minimum_tours: 3
+        spatial_dispersion_m: 3.773716
+        normalized_score: 0.504451
+        rank_in_group: 5
+    - name: 44-(10x2)-15-09
+      stratum: difficile
+      indicators:
+        total_demand: 55
+        minimum_tours: 4
+        spatial_dispersion_m: 3.491457
+        normalized_score: 0.761666
+        rank_in_group: 9
+    - name: 88-(19x6)-30-07
+      stratum: facile
+      indicators:
+        total_demand: 76
+        minimum_tours: 6
+        spatial_dispersion_m: 8.71309
+        normalized_score: 0.240735
+        rank_in_group: 2
+    - name: 88-(19x6)-30-05
+      stratum: media
+      indicators:
+        total_demand: 95
+        minimum_tours: 7
+        spatial_dispersion_m: 7.549252
+        normalized_score: 0.559524
+        rank_in_group: 5
+    - name: 88-(19x6)-30-04
+      stratum: difficile
+      indicators:
+        total_demand: 104
+        minimum_tours: 7
+        spatial_dispersion_m: 8.424827
+        normalized_score: 0.847776
+        rank_in_group: 9
+    - name: 88-(19x6)-60-03
+      stratum: facile
+      indicators:
+        total_demand: 158
+        minimum_tours: 11
+        spatial_dispersion_m: 8.920346
+        normalized_score: 0.31814
+        rank_in_group: 2
+    - name: 88-(19x6)-60-10
+      stratum: media
+      indicators:
+        total_demand: 175
+        minimum_tours: 12
+        spatial_dispersion_m: 8.630188
+        normalized_score: 0.551341
+        rank_in_group: 5
+    - name: 88-(19x6)-60-08
+      stratum: difficile
+      indicators:
+        total_demand: 191
+        minimum_tours: 13
+        spatial_dispersion_m: 8.620269
+        normalized_score: 0.876028
+        rank_in_group: 9
+    - name: 88-(20x4)-30-07
+      stratum: facile
+      indicators:
+        total_demand: 76
+        minimum_tours: 6
+        spatial_dispersion_m: 8.272609
+        normalized_score: 0.235775
+        rank_in_group: 2
+    - name: 88-(20x4)-30-05
+      stratum: media
+      indicators:
+        total_demand: 95
+        minimum_tours: 7
+        spatial_dispersion_m: 6.83596
+        normalized_score: 0.559524
+        rank_in_group: 5
+    - name: 88-(20x4)-30-04
+      stratum: difficile
+      indicators:
+        total_demand: 104
+        minimum_tours: 7
+        spatial_dispersion_m: 7.867431
+        normalized_score: 0.835946
+        rank_in_group: 9
+    - name: 88-(20x4)-60-02
+      stratum: facile
+      indicators:
+        total_demand: 164
+        minimum_tours: 11
+        spatial_dispersion_m: 8.290895
+        normalized_score: 0.301375
+        rank_in_group: 2
+    - name: 88-(20x4)-60-10
+      stratum: media
+      indicators:
+        total_demand: 175
+        minimum_tours: 12
+        spatial_dispersion_m: 8.189575
+        normalized_score: 0.549421
+        rank_in_group: 5
+    - name: 88-(20x4)-60-08
+      stratum: difficile
+      indicators:
+        total_demand: 191
+        minimum_tours: 13
+        spatial_dispersion_m: 8.137003
+        normalized_score: 0.862277
+        rank_in_group: 9
+    - name: 88-(21x2)-30-07
+      stratum: facile
+      indicators:
+        total_demand: 76
+        minimum_tours: 6
+        spatial_dispersion_m: 7.926034
+        normalized_score: 0.233208
+        rank_in_group: 2
+    - name: 88-(21x2)-30-05
+      stratum: media
+      indicators:
+        total_demand: 95
+        minimum_tours: 7
+        spatial_dispersion_m: 6.284768
+        normalized_score: 0.559524
+        rank_in_group: 5
+    - name: 88-(21x2)-30-04
+      stratum: difficile
+      indicators:
+        total_demand: 104
+        minimum_tours: 7
+        spatial_dispersion_m: 7.426472
+        normalized_score: 0.828892
+        rank_in_group: 9
+    - name: 88-(21x2)-60-03
+      stratum: facile
+      indicators:
+        total_demand: 158
+        minimum_tours: 11
+        spatial_dispersion_m: 8.161935
+        normalized_score: 0.292224
+        rank_in_group: 2
+    - name: 88-(21x2)-60-10
+      stratum: media
+      indicators:
+        total_demand: 175
+        minimum_tours: 12
+        spatial_dispersion_m: 7.839628
+        normalized_score: 0.546934
+        rank_in_group: 5
+    - name: 88-(21x2)-60-08
+      stratum: difficile
+      indicators:
+        total_demand: 191
+        minimum_tours: 13
+        spatial_dispersion_m: 7.736784
+        normalized_score: 0.848518
+        rank_in_group: 9
+  basic_2d:
+    instances: all
+  completo:
+    instances: all

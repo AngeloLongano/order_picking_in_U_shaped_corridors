@@ -11,6 +11,7 @@ dependencies = [
     "gurobipy>=13.0.3,<14",
     "ortools>=9.15.6755",
     "pandas>=3.0.6",
+    "pyyaml>=6.0.2",
     "pip>=26.2.2",
     "scikit-learn>=1.9.1",
     "seaborn>=0.13.2",

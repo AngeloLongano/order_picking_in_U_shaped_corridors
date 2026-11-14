@@ -48,7 +48,19 @@ Il modello **Gurobi** risolve il problema dei percorsi a deposito fissato con di
 
 Il [notebook Gurobi](notebooks/picking_deposito_mobile_gurobi.ipynb) confronta i due solver con la stessa istanza, gli stessi parametri di ricerca e lo stesso limite per candidato. Nell'esecuzione salvata i quattro metodi individuano le stesse posizioni e gli stessi costi, arrotondati a quattro decimali. Per i candidati selezionati entrambi i solver riportano `OPTIMAL`; non tutti i candidati valutati da CP-SAT hanno ricevuto una prova di ottimalità. I tempi riportati nel notebook descrivono quella singola esecuzione.
 
-Gurobi ottimizza le distanze reali, mentre CP-SAT usa coefficienti arrotondati a `10⁻⁴` m e ricalcola poi le distanze dei percorsi. Le rispettive prove di ottimalità si riferiscono quindi ai loro modelli a deposito fissato.
+Per il confronto principale, entrambi i solver ottimizzano coefficienti di distanza arrotondati a `10⁻⁴` m e ricalcolano separatamente le distanze euclidee dei percorsi. Gurobi può ancora usare l'obiettivo euclideo tramite `objective_profile="euclidean"`, come profilo distinto.
+
+## Benchmark riproducibile
+
+La [guida al benchmark](benchmarks/README.md) spiega configurazione, scenari, ripresa e analisi. Cambiare `active` in `benchmarks/scenari.yaml` per scegliere `tecnica`, `pilota`, `basic_2d` o `completo`, quindi eseguire:
+
+```sh
+uv sync
+uv run python -m src.benchmark preview
+uv run python -m src.benchmark run
+```
+
+`preview` mostra lavori e durate stimate senza avviare solver. `run` salva checkpoint per candidato e CSV in `results/<run_id>/`; un nuovo lancio riprende i lavori incompleti. Le stime iniziali in `benchmarks/stime_init.json` sono estrapolazioni dal paper, non misure locali. Il [notebook di analisi](notebooks/benchmark_picking.ipynb) legge i risultati già salvati senza rilanciare i solver.
 
 ## Crediti e riferimenti
 
